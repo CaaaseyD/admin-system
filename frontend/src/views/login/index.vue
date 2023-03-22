@@ -75,7 +75,7 @@ export default {
     return {
       loginForm: {
         username: 'admin',
-        password: '111111'
+        password: '123456'
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
@@ -182,14 +182,22 @@ $light_gray:#eee;
   width: 100%;
   background-color: $bg;
   overflow: hidden;
-
+  background-image: url('../../assets/bg.jpg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
   .login-form {
     position: relative;
     width: 520px;
     max-width: 100%;
-    padding: 160px 35px 0;
+    padding: 35px 35px 10px;
     margin: 0 auto;
     overflow: hidden;
+    background-color: #2d3a4b;
+    border-radius: 8px;
+    opacity: 0.9;
   }
 
   .tips {
